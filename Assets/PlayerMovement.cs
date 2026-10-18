@@ -67,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
     public float HorizontalVelocity => Mathf.Abs(rb.linearVelocity.x);
     public float VerticalVelocity => rb.linearVelocity.y;
 
+    public float SpeedMultiplier { get; set; } = 1f;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -266,7 +268,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isClimbing) return;
 
-        float target = (isDucking ? crawlSpeed : moveSpeed) * currentSpeedMultiplier * horizontalInput;
+        float target = (isDucking ? crawlSpeed : moveSpeed) * SpeedMultiplier * currentSpeedMultiplier * horizontalInput;
         float diff = target - rb.linearVelocity.x;
         float rate = (Mathf.Abs(target) > 0.01f) ? acceleration : deceleration;
         float force = diff * rate * Time.fixedDeltaTime;
