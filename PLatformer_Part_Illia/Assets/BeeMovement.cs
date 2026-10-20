@@ -22,6 +22,8 @@ public class BeeMovement : MonoBehaviour
     private bool _isPreparingAttack;
     private Collider2D _beeCol;
 
+    private float _shootingZone;
+
     private void Awake()
     {
         _beeBody = GetComponent<Rigidbody2D>();
@@ -30,6 +32,7 @@ public class BeeMovement : MonoBehaviour
         _playerAwarness = GetComponent<PlayerAwarness>();
         _bulletSpike = _bullet.GetComponent<BulletSpikeScript>();
         _beeCol = GetComponent<Collider2D>();
+        _shootingZone = _playerAwarness.PlayerAwarenessZone * (2f / 3f);
     }
 
     private void FixedUpdate()
@@ -51,7 +54,7 @@ public class BeeMovement : MonoBehaviour
 
     private void Attack()
     {
-        if (_isAvailable && (_player.position - transform.position).magnitude <= _bulletSpike.ShootingZone)
+        if (_isAvailable && (_player.position - transform.position).magnitude <= _shootingZone)
         {
             StartCoroutine(PreparingAttack());
         }
