@@ -196,4 +196,42 @@ public class BossFightManager : MonoBehaviour
             }
         }
     }
+
+    public void RestartFight()
+    {
+        StopAllCoroutines();
+
+        if (activeBomb != null)
+        {
+            Destroy(activeBomb);
+        }
+
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (var enemy in enemies)
+        {
+            if (enemy != null && enemy.GetComponent<BossArenaController>() == null)
+            {
+                Destroy(enemy);
+            }
+        }
+
+        GameObject[] projectiles = GameObject.FindGameObjectsWithTag("Projectile");
+        foreach (var proj in projectiles)
+        {
+            if (proj != null)
+            {
+                Destroy(proj);
+            }
+        }
+
+        foreach (var btn in allButtons)
+        {
+            if (btn != null) btn.SetState(false, false);
+        }
+
+        currentWave = 1;
+        IsBossDefeated = false;
+
+        StartWave(1);
+    }
 }

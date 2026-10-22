@@ -11,7 +11,7 @@ public class SlimeEnemy : MonoBehaviour
     [Header("Edge & Wall Detection")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Transform wallCheck;
-    [SerializeField] private float wallCheckDistance = 0.4f;
+    [SerializeField] private float wallCheckDistance = 0.35f;
     [SerializeField] private float groundCheckDistance = 0.4f;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
@@ -26,6 +26,7 @@ public class SlimeEnemy : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D col;
     private bool isDead = false;
+    private float flipCooldown = 0f;
 
     private static readonly int IsMovingHash = Animator.StringToHash("IsMoving");
     private static readonly int DieTriggerHash = Animator.StringToHash("Die");
@@ -34,7 +35,7 @@ public class SlimeEnemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
-        
+
         if (animator == null)
             animator = GetComponent<Animator>();
 
@@ -44,6 +45,14 @@ public class SlimeEnemy : MonoBehaviour
     private void Start()
     {
         UpdateFacingDirection();
+    }
+
+    private void Update()
+    {
+        if (flipCooldown > 0f)
+        {
+            flipCooldown -= Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
@@ -63,21 +72,24 @@ public class SlimeEnemy : MonoBehaviour
             animator.SetBool(IsMovingHash, Mathf.Abs(rb.linearVelocity.x) > 0.05f);
         }
 
-        Vector2 direction = movingRight ? Vector2.right : Vector2.left;
-        Vector2 wallOrigin = wallCheck != null ? (Vector2)wallCheck.position : (Vector2)transform.position;
+        if (flipCooldown > 0f) return;
 
-        LayerMask obstacleMask = wallLayer | groundLayer;
+        Vector2 moveDirection = movingRight ? Vector2.right : Vector2.left;
 
-        RaycastHit2D wallHit = Physics2D.Raycast(wallOrigin, direction, wallCheckDistance, obstacleMask);
-
-        bool groundAhead = true;
-        if (groundCheck != null)
+        Vector2 wallOrigin;
+        if (wallCheck != null)
         {
-            RaycastHit2D groundHit = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
-            groundAhead = groundHit.collider != null;
+            float forwardOffset = Mathf.Abs(wallCheck.localPosition.x);
+            wallOrigin = new Vector2(transform.position.x + (movingRight ? forwardOffset : -forwardOffset), wallCheck.position.y);
+        }
+        else
+        {
+            wallOrigin = transform.position;
         }
 
-        if (wallHit.collider != null || !groundAhead)
+        RaycastHit2D wallHit = Physics2D.Raycast(wallOrigin, moveDirection, wallCheckDistance, wallLayer);
+
+        if (wallHit.collider != null)
         {
             Flip();
         }
@@ -86,6 +98,7 @@ public class SlimeEnemy : MonoBehaviour
     private void Flip()
     {
         movingRight = !movingRight;
+        flipCooldown = 0.25f;
         UpdateFacingDirection();
     }
 
@@ -133,7 +146,10 @@ public class SlimeEnemy : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
 
         var spawnable = GetComponent<SpawnableEnemy>();
-        if (spawnable != null) spawnable.NotifyKilled();
+        if (spawnable != null)
+        {
+            spawnable.NotifyKilled();
+        }
 
         if (animator != null)
         {
@@ -160,14 +176,18 @@ public class SlimeEnemy : MonoBehaviour
         Gizmos.color = Color.red;
         if (wallCheck != null)
         {
+            float forwardOffset = Mathf.Abs(wallCheck.localPosition.x);
+            Vector2 wallOrigin = new Vector2(transform.position.x + (movingRight ? forwardOffset : -forwardOffset), wallCheck.position.y);
             Vector2 dir = movingRight ? Vector2.right : Vector2.left;
-            Gizmos.DrawRay(wallCheck.position, dir * wallCheckDistance);
+            Gizmos.DrawRay(wallOrigin, dir * wallCheckDistance);
         }
 
         Gizmos.color = Color.green;
         if (groundCheck != null)
         {
-            Gizmos.DrawRay(groundCheck.position, Vector2.down * groundCheckDistance);
+            float groundOffset = Mathf.Abs(groundCheck.localPosition.x);
+            Vector2 groundOrigin = new Vector2(transform.position.x + (movingRight ? groundOffset : -groundOffset), groundCheck.position.y);
+            Gizmos.DrawRay(groundOrigin, Vector2.down * groundCheckDistance);
         }
     }
 }

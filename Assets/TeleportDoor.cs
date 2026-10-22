@@ -3,23 +3,30 @@ using UnityEngine;
 public class TeleportDoor : MonoBehaviour
 {
     [SerializeField] private Transform destinationPoint;
-
     [SerializeField] private bool requireInteractKey = true;
     [SerializeField] private KeyCode interactKey = KeyCode.E;
 
     private bool isPlayerInside = false;
     private GameObject playerObj;
 
+    private void Update()
+    {
+        if (isPlayerInside && requireInteractKey && Input.GetKeyDown(interactKey))
+        {
+            PerformTeleport(playerObj);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            isPlayerInside = true;
             playerObj = collision.gameObject;
+            isPlayerInside = true;
 
             if (!requireInteractKey)
             {
-                Teleport();
+                PerformTeleport(playerObj);
             }
         }
     }
@@ -33,29 +40,19 @@ public class TeleportDoor : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void PerformTeleport(GameObject player)
     {
-        if (isPlayerInside && requireInteractKey && Input.GetKeyDown(interactKey))
+        if (destinationPoint != null && player != null)
         {
-            Teleport();
-        }
-    }
-
-    private void Teleport()
-    {
-        if (destinationPoint == null || playerObj == null) return;
-
-        var rb = playerObj.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.linearVelocity = Vector2.zero;
-        }
-
-        playerObj.transform.position = destinationPoint.position;
-
-        if (Camera.main != null)
-        {
-            Camera.main.transform.position = new Vector3(destinationPoint.position.x, destinationPoint.position.y, -10f);
+            if (ScreenFadeTransition.Instance != null)
+            {
+                ScreenFadeTransition.Instance.TeleportWithFade(player, destinationPoint);
+            }
+            else
+            {
+                player.transform.position = destinationPoint.position;
+                RespawnManager.HasEnteredCastle = true;
+            }
         }
     }
 }

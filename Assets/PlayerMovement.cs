@@ -48,6 +48,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float climbSpeed = 4f;
     [SerializeField] private float ladderDismountForce = 6.5f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip jumpSound;
+    private AudioSource playerAudio;
+
     private Rigidbody2D rb;
     private Collider2D playerCollider;
     private Animator animator;
@@ -84,6 +88,13 @@ public class PlayerMovement : MonoBehaviour
         playerCollider = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         defaultGravity = rb.gravityScale;
+
+        playerAudio = GetComponent<AudioSource>();
+        if (playerAudio == null)
+        {
+            playerAudio = gameObject.AddComponent<AudioSource>();
+        }
+        playerAudio.playOnAwake = false;
     }
 
     private void Update()
@@ -175,6 +186,7 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, ladderDismountForce);
             jumpBufferCounter = 0f;
             airJumpsRemaining = maxAirJumps;
+            PlayJumpSound();
             return;
         }
 
@@ -198,6 +210,16 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, force);
         jumpBufferCounter = 0f;
         isGrounded = false;
+
+        PlayJumpSound();
+    }
+
+    private void PlayJumpSound()
+    {
+        if (jumpSound != null && playerAudio != null)
+        {
+            playerAudio.PlayOneShot(jumpSound);
+        }
     }
 
     private bool TryDropThroughPlatform()

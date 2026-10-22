@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float knockbackForce = 7f;
     [SerializeField] private float invulnerabilityDuration = 1f;
     private bool isInvulnerable = false;
+    private bool isDead = false;
 
     [SerializeField] private Image[] heartImages;
     [SerializeField] private Sprite fullHeartSprite;
@@ -19,12 +20,22 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Animator animator;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip hurtSound;
+    private AudioSource playerAudio;
+
     private void Start()
     {
         currentHealth = maxHealth;
         if (rb == null) rb = GetComponent<Rigidbody2D>();
         if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
         if (animator == null) animator = GetComponent<Animator>();
+        playerAudio = GetComponent<AudioSource>();
+        if (playerAudio == null)
+        {
+            playerAudio = gameObject.AddComponent<AudioSource>();
+            playerAudio.playOnAwake = false;
+        }
 
         UpdateHeartsUI();
     }
@@ -34,6 +45,10 @@ public class PlayerHealth : MonoBehaviour
         if (isInvulnerable || currentHealth <= 0) return;
 
         currentHealth -= damage;
+        if (hurtSound != null && playerAudio != null)
+        {
+            playerAudio.PlayOneShot(hurtSound);
+        }
         UpdateHeartsUI();
 
         if (animator != null)
@@ -93,9 +108,34 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player died!");
-        UnityEngine.SceneManagement.SceneManager.LoadScene(
-            UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex
-        );
+        if (isDead) return;
+        isDead = true;
+
+        var movement = GetComponent<PlayerMovement>();
+        if (movement != null) 
+            movement.enabled = false;
+
+        if (GameOverManager.Instance != null)
+        {
+            GameOverManager.Instance.TriggerGameOver();
+        }
+    }
+
+    public void ResetHealth()
+    {
+        isDead = false;
+        currentHealth = maxHealth;
+
+        if (heartImages != null)
+        {
+            for (int i = 0; i < heartImages.Length; i++)
+            {
+                if (heartImages[i] != null && fullHeartSprite != null)
+                {
+                    heartImages[i].sprite = fullHeartSprite;
+                    heartImages[i].enabled = true;
+                }
+            }
+        }
     }
 }
