@@ -14,9 +14,16 @@ public class BossFightManager : MonoBehaviour
     [SerializeField] private GameObject heavyBombPrefab;
     [SerializeField] private Transform[] bombSpawnPoints;
 
+    public static bool IsBossDefeated { get; private set; } = false;
+
     private List<BossButton> currentWaveButtons = new List<BossButton>();
     private int pressedButtonsCount = 0;
     private GameObject activeBomb;
+
+    private void Awake()
+    {
+        IsBossDefeated = false;
+    }
 
     private void Start()
     {
@@ -140,7 +147,7 @@ public class BossFightManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Усі 5 хвиль пройдено! Бос повалений!");
+            DefeatBoss();
         }
     }
 
@@ -148,5 +155,45 @@ public class BossFightManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         StartWave(currentWave);
+    }
+
+    private void DefeatBoss()
+    {
+        IsBossDefeated = true;
+        Debug.Log("Усі 5 хвиль пройдено! Бос повалений!");
+
+        foreach (var btn in allButtons)
+        {
+            if (btn != null) btn.SetState(false, false);
+        }
+
+        if (activeBomb != null)
+        {
+            Destroy(activeBomb);
+        }
+
+        EnemySpawnPoint[] spawners = FindObjectsByType<EnemySpawnPoint>(FindObjectsSortMode.None);
+        foreach (var spawner in spawners)
+        {
+            spawner.DestroySpawnedEnemyOnBossDeath();
+        }
+
+        SpawnableEnemy[] allEnemies = FindObjectsByType<SpawnableEnemy>(FindObjectsSortMode.None);
+        foreach (var enemy in allEnemies)
+        {
+            if (enemy != null)
+            {
+                Destroy(enemy.gameObject);
+            }
+        }
+
+        BatMovement[] bats = FindObjectsByType<BatMovement>(FindObjectsSortMode.None);
+        foreach (var bat in bats)
+        {
+            if (bat != null)
+            {
+                bat.Die();
+            }
+        }
     }
 }

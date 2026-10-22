@@ -15,31 +15,46 @@ public class HeavyBomb : MonoBehaviour
         fightManager = manager;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (isDetonated) return;
+
+        if (collision.CompareTag("Boss"))
+        {
+            HitBoss(collision.gameObject);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (isDetonated) return;
 
         if (collision.gameObject.CompareTag("Boss"))
         {
-            isDetonated = true;
-
-            var boss = collision.gameObject.GetComponent<BossArenaController>();
-            if (boss != null)
-            {
-                boss.TakeBombDamage(damage);
-            }
-
-            if (fightManager != null)
-            {
-                fightManager.OnBossHitByBomb();
-            }
-
-            Destroy(gameObject);
+            HitBoss(collision.gameObject);
         }
         else if (collision.gameObject.CompareTag("Ground"))
         {
             StartCoroutine(HandleMissedDrop());
         }
+    }
+
+    private void HitBoss(GameObject bossObj)
+    {
+        isDetonated = true;
+
+        var boss = bossObj.GetComponent<BossArenaController>();
+        if (boss != null)
+        {
+            boss.TakeBombDamage(damage);
+        }
+
+        if (fightManager != null)
+        {
+            fightManager.OnBossHitByBomb();
+        }
+
+        Destroy(gameObject);
     }
 
     private IEnumerator HandleMissedDrop()

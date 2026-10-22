@@ -4,22 +4,28 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D), typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Horizontal Movement")]
     [SerializeField] private float moveSpeed = 6f;
     [SerializeField] private float crawlSpeed = 2.8f;
     [SerializeField] private float acceleration = 45f;
     [SerializeField] private float deceleration = 55f;
 
+    [Header("Jump Settings")]
     [SerializeField] private float jumpForce = 9.5f;
+    [SerializeField] private float doubleJumpForce = 8.5f;
+    [SerializeField] private int maxAirJumps = 1;
     [SerializeField] private float fallMultiplier = 2.4f;
     [SerializeField] private float lowJumpMultiplier = 2.0f;
     [SerializeField] private float coyoteTime = 0.12f;
     [SerializeField] private float jumpBufferTime = 0.12f;
 
+    [Header("Fatigue Mechanics")]
     [SerializeField] private float consecutiveJumpPenalty = 0.75f;
     [SerializeField] private float fatigueRecoveryTime = 0.35f;
     private float currentSpeedMultiplier = 1f;
     private float fatigueTimer;
 
+    [Header("Environment Checks")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Vector2 groundCheckSize = new Vector2(0.5f, 0.15f);
     [SerializeField] private LayerMask groundLayer;
@@ -32,11 +38,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Vector2 ladderCheckSize = new Vector2(0.5f, 0.7f);
     [SerializeField] private LayerMask ladderLayer;
 
+    [Header("Collider Sizing")]
     [SerializeField] private Vector2 standColliderSize = new Vector2(0.6f, 0.8f);
     [SerializeField] private Vector2 standColliderOffset = new Vector2(0f, 0f);
     [SerializeField] private Vector2 duckColliderSize = new Vector2(0.6f, 0.4f);
     [SerializeField] private Vector2 duckColliderOffset = new Vector2(0f, -0.2f);
 
+    [Header("Ladder Settings")]
     [SerializeField] private float climbSpeed = 4f;
     [SerializeField] private float ladderDismountForce = 6.5f;
 
@@ -54,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float coyoteCounter;
     private float jumpBufferCounter;
+    private int airJumpsRemaining;
 
     private static readonly int SpeedHash = Animator.StringToHash("Speed");
     private static readonly int IsGroundedHash = Animator.StringToHash("IsGrounded");
@@ -127,6 +136,11 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, combinedMask);
         }
 
+        if (isGrounded)
+        {
+            airJumpsRemaining = maxAirJumps;
+        }
+
         Vector2 ladderPos = ladderCheck != null ? (Vector2)ladderCheck.position : (Vector2)transform.position;
         isTouchingLadder = Physics2D.OverlapBox(ladderPos, ladderCheckSize, 0f, ladderLayer);
 
@@ -144,12 +158,10 @@ public class PlayerMovement : MonoBehaviour
         else
             coyoteCounter -= Time.deltaTime;
 
-        if (jumpBufferCounter > 0f && verticalInput < -0.1f)
+        if (jumpBufferCounter > 0f && verticalInput < -0.2f)
         {
-            Collider2D platform = GetPlatformUnderFeet();
-            if (platform != null)
+            if (TryDropThroughPlatform())
             {
-                StartCoroutine(DropThroughPlatform(platform));
                 jumpBufferCounter = 0f;
                 coyoteCounter = 0f;
                 return;
@@ -162,35 +174,90 @@ public class PlayerMovement : MonoBehaviour
             rb.gravityScale = defaultGravity;
             rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, ladderDismountForce);
             jumpBufferCounter = 0f;
+            airJumpsRemaining = maxAirJumps;
             return;
         }
 
-        if (jumpBufferCounter > 0f && coyoteCounter > 0f && !isDucking && !isClimbing)
+        if (jumpBufferCounter > 0f && coyoteCounter > 0f && !isDucking && !isClimbing && verticalInput >= -0.2f)
         {
-            currentSpeedMultiplier = consecutiveJumpPenalty;
-            fatigueTimer = fatigueRecoveryTime;
-
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            jumpBufferCounter = 0f;
+            ExecuteJump(jumpForce);
             coyoteCounter = -1f;
-            isGrounded = false;
+        }
+        else if (jumpBufferCounter > 0f && airJumpsRemaining > 0 && !isGrounded && !isClimbing)
+        {
+            airJumpsRemaining--;
+            ExecuteJump(doubleJumpForce);
         }
     }
 
-    private Collider2D GetPlatformUnderFeet()
+    private void ExecuteJump(float force)
     {
-        Vector2 checkPos = groundCheck != null ? (Vector2)groundCheck.position : (Vector2)transform.position;
-        RaycastHit2D hit = Physics2D.BoxCast(checkPos, new Vector2(groundCheckSize.x, 0.1f), 0f, Vector2.down, 0.25f, oneWayPlatformLayer);
-        return hit.collider;
+        currentSpeedMultiplier = consecutiveJumpPenalty;
+        fatigueTimer = fatigueRecoveryTime;
+
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, force);
+        jumpBufferCounter = 0f;
+        isGrounded = false;
     }
 
-    private IEnumerator DropThroughPlatform(Collider2D platform)
+    private bool TryDropThroughPlatform()
     {
-        Physics2D.IgnoreCollision(playerCollider, platform, true);
-        yield return new WaitForSeconds(0.35f);
-        if (platform != null)
+        Vector2 checkPos = groundCheck != null ? (Vector2)groundCheck.position : (Vector2)transform.position;
+        Collider2D hit = Physics2D.OverlapBox(checkPos, new Vector2(groundCheckSize.x * 1.5f, 0.4f), 0f, oneWayPlatformLayer);
+
+        if (hit != null)
         {
-            Physics2D.IgnoreCollision(playerCollider, platform, false);
+            PlatformEffector2D effector = hit.GetComponent<PlatformEffector2D>();
+            if (effector == null && hit.transform.parent != null)
+            {
+                effector = hit.transform.parent.GetComponent<PlatformEffector2D>();
+            }
+
+            if (effector != null)
+            {
+                StartCoroutine(FlipEffectorRoutine(effector));
+                return true;
+            }
+
+            Collider2D[] colliders = hit.transform.parent != null
+                ? hit.transform.parent.GetComponentsInChildren<Collider2D>()
+                : hit.GetComponents<Collider2D>();
+
+            StartCoroutine(DisableCollisionsRoutine(colliders));
+            return true;
+        }
+
+        return false;
+    }
+
+    private IEnumerator FlipEffectorRoutine(PlatformEffector2D effector)
+    {
+        effector.rotationalOffset = 180f;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, -3.5f);
+
+        yield return new WaitForSeconds(0.4f);
+
+        if (effector != null)
+        {
+            effector.rotationalOffset = 0f;
+        }
+    }
+
+    private IEnumerator DisableCollisionsRoutine(Collider2D[] platformColliders)
+    {
+        foreach (var col in platformColliders)
+        {
+            if (col != null) Physics2D.IgnoreCollision(playerCollider, col, true);
+        }
+
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, -3.5f);
+
+        yield return new WaitForSeconds(0.4f);
+
+        foreach (var col in platformColliders)
+        {
+            if (col != null && playerCollider != null)
+                Physics2D.IgnoreCollision(playerCollider, col, false);
         }
     }
 
@@ -216,6 +283,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (isClimbing)
         {
+            airJumpsRemaining = maxAirJumps;
             rb.gravityScale = 0f;
             rb.linearVelocity = new Vector2(horizontalInput * (moveSpeed * 0.4f), verticalInput * climbSpeed);
         }
@@ -311,5 +379,17 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, force);
         coyoteCounter = 0f;
+        airJumpsRemaining = maxAirJumps;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireCube((Vector2)groundCheck.position + Vector2.down * 0.15f, new Vector2(groundCheckSize.x * 1.5f, 0.4f));
+        }
     }
 }

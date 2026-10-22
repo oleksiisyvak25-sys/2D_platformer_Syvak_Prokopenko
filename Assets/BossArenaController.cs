@@ -234,4 +234,21 @@ public class BossArenaController : MonoBehaviour
         chargeDuration = chargeTime;
         attackCooldown = cooldown;
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            var playerHealth = collision.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                Vector2 knockbackDir = (collision.transform.position - transform.position).normalized;
+                
+                if (knockbackDir == Vector2.zero)
+                    knockbackDir = Vector2.down;
+
+                playerHealth.TakeDamage(1, knockbackDir);
+            }
+        }
+    }
 }
