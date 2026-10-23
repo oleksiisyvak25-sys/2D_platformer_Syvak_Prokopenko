@@ -231,6 +231,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7759906421431102788, guid: f5b28ebfe54aa9eb4bab53b31bcb17a3, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7759906421431102788, guid: f5b28ebfe54aa9eb4bab53b31bcb17a3, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -389,7 +397,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4175284561481330792, guid: 0ce0bb038c84e2d09ae15fab722b7beb, type: 3}
   m_PrefabInstance: {fileID: 5894553543927010566}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1260205071535491852
+--- !u!114 &3117906551483821717
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
