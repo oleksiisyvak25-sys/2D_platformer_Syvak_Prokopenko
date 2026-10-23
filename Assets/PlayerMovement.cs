@@ -79,19 +79,30 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        GatherInputs();
-        CheckEnvironment();
-        HandleJumpAndDrop();
-        HandleCrouch();
-        HandleClimb();
-        UpdateFatigue();
-        UpdateAnimator();
+        if (!PauseController.IsPaused)
+        {
+            GatherInputs();
+            CheckEnvironment();
+            HandleJumpAndDrop();
+            HandleCrouch();
+            HandleClimb();
+            UpdateFatigue();
+            UpdateAnimator();
+        }
+        
     }
 
     private void FixedUpdate()
     {
-        ApplyMovement();
-        ApplyJumpArc();
+        if (!PauseController.IsPaused)
+        {
+            ApplyMovement();
+            ApplyJumpArc();
+        }
+        else
+        {
+            rb.linearVelocity = Vector3.zero;
+        }
     }
 
     private void GatherInputs()
