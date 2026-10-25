@@ -12,6 +12,10 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private Button restartButton;
     [SerializeField] private Button menuButton;
 
+    [Header("Fight References")]
+    [Tooltip("Необов'язково: можна перетягнути BossFighterManager сюди напряму")]
+    [SerializeField] private BossFightManager bossFightManager;
+
     [Header("Audio")]
     [SerializeField] private AudioClip deathSound;
     private AudioSource audioSource;
@@ -102,12 +106,26 @@ public class GameOverManager : MonoBehaviour
             if (health != null) health.ResetHealth();
         }
 
+        ResetBossEncounter();
+    }
+
+    private void ResetBossEncounter()
+    {
+        if (bossFightManager == null)
+        {
+            bossFightManager = FindFirstObjectByType<BossFightManager>(FindObjectsInactive.Include);
+        }
+
         if (RespawnManager.HasEnteredCastle)
         {
-            BossFightManager manager = FindFirstObjectByType<BossFightManager>();
-            if (manager != null)
+            if (bossFightManager != null)
             {
-                manager.RestartFight();
+                Debug.Log("[GameOverManager] Перезапускаємо бій через BossFightManager.RestartFight()");
+                bossFightManager.RestartFight();
+            }
+            else
+            {
+                Debug.LogError("[GameOverManager] Не вдалося знайти BossFightManager на сцені!");
             }
         }
     }
