@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984954b69419fe346aefa18f590a055f, type: 3}
+  m_Name: JumpingDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::NPCSpeaking
+  _typingSpeed: 0.05
+  _npcName: JumpNPC
+  _npcPortrait: {fileID: 3672501252913576423, guid: 33c272f227b51dc4788fc70e6e55b884, type: 3}
+  _dialogueLines:
+  - Yo! Traveller
+  - Are you here to learn jumping?
+  - So, just press SPACE and get higher and higher!
+  _autoProgressLine: 010100
+  _autoProgressDelay: 1.5
