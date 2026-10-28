@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 7400268159257951047}
   - component: {fileID: 2476812686038754082}
   - component: {fileID: -2588094438596768076}
+  - component: {fileID: 8307496119389280746}
   m_Layer: 11
   m_Name: SlimeBlue
   m_TagString: Untagged
@@ -284,8 +285,6 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 512
-  playerBounceForce: 9.5
-  deathEffect: {fileID: 0}
   animator: {fileID: 0}
 --- !u!95 &-2588094438596768076
 Animator:
@@ -309,3 +308,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8307496119389280746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9025033542916901137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d01ce5b6074177318650d592c1812ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 1
+  bounceOffForce: 8.5
+  deathEffect: {fileID: 0}
+  deathSprite: {fileID: 7255294961469398162, guid: 033f666914fbb1f4b9b230009d8a852f, type: 3}
+  flipUpsideDown: 1
+  deathHopForce: 7
+  deathHorizontalSpeed: 2
+  deathSpinSpeed: 0
+  deathGravityScale: 3
+  deathLifetime: 1.5
+  deathSortingBoost: 10

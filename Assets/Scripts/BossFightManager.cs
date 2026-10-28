@@ -14,11 +14,15 @@ public class BossFightManager : MonoBehaviour
     [SerializeField] private GameObject heavyBombPrefab;
     [SerializeField] private Transform[] bombSpawnPoints;
 
+    [Header("Player Death")]
+    [SerializeField] private bool redropBombOnDeath = false;
+
     public static bool IsBossDefeated { get; private set; } = false;
 
     private List<BossButton> currentWaveButtons = new List<BossButton>();
     private int pressedButtonsCount = 0;
     private GameObject activeBomb;
+    private bool bombPhase = false;
 
     private void Awake()
     {
@@ -45,6 +49,7 @@ public class BossFightManager : MonoBehaviour
     {
         currentWave = waveIndex;
         pressedButtonsCount = 0;
+        bombPhase = false;
 
         ApplyWaveDifficulty(currentWave);
 
@@ -123,6 +128,7 @@ public class BossFightManager : MonoBehaviour
 
         Transform spawnPoint = bombSpawnPoints[Random.Range(0, bombSpawnPoints.Length)];
         activeBomb = Instantiate(heavyBombPrefab, spawnPoint.position, Quaternion.identity);
+        bombPhase = true;
 
         var bomb = activeBomb.GetComponent<HeavyBomb>();
         if (bomb != null)
@@ -133,12 +139,14 @@ public class BossFightManager : MonoBehaviour
 
     public void OnBombMissed()
     {
+        bombPhase = false;
         Debug.Log("Промах! Хвиля перезапускається: потрібно натиснути всі кнопки заново.");
         StartWave(currentWave);
     }
 
     public void OnBossHitByBomb()
     {
+        bombPhase = false;
         currentWave++;
 
         if (currentWave <= totalWaves)
@@ -160,6 +168,7 @@ public class BossFightManager : MonoBehaviour
     private void DefeatBoss()
     {
         IsBossDefeated = true;
+        bombPhase = false;
         Debug.Log("Усі 5 хвиль пройдено! Бос повалений!");
 
         foreach (var btn in allButtons)
@@ -192,7 +201,51 @@ public class BossFightManager : MonoBehaviour
         {
             if (bat != null)
             {
-                bat.Die();
+                Destroy(bat.gameObject);
+            }
+        }
+    }
+
+    public void ResetAfterPlayerDeath()
+    {
+        if (IsBossDefeated) return;
+
+        StopAllCoroutines();
+        ClearHazards();
+
+        if (bombPhase && redropBombOnDeath)
+        {
+            SpawnSingleBomb();
+        }
+        else
+        {
+            StartWave(currentWave);
+        }
+    }
+
+    private void ClearHazards()
+    {
+        if (activeBomb != null)
+        {
+            Destroy(activeBomb);
+            activeBomb = null;
+        }
+
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (var enemy in enemies)
+        {
+            if (enemy != null && enemy.GetComponent<BossArenaController>() == null)
+            {
+                Destroy(enemy);
+            }
+        }
+
+        GameObject[] projectiles = GameObject.FindGameObjectsWithTag("Projectile");
+        foreach (var proj in projectiles)
+        {
+            if (proj != null)
+            {
+                Destroy(proj);
             }
         }
     }

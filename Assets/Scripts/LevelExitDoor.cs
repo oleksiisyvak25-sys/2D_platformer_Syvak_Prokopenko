@@ -13,9 +13,10 @@ public class LevelExitDoor : MonoBehaviour
     [SerializeField] private AudioClip victorySound;
     private AudioSource audioSource;
 
-    [Header("Next Level / Scene")]
-    [SerializeField] private bool loadNextScene = false;
-    [SerializeField] private string nextSceneName = "";
+    [Header("After victory")]
+    [SerializeField] private float returnDelay = 10f;
+    [SerializeField] private string sceneAfterVictory = "MainMenu";
+    [SerializeField] private float musicFadeOut = 0.6f;
 
     private bool isPlayerNearby = false;
     private bool isActivated = false;
@@ -81,6 +82,13 @@ public class LevelExitDoor : MonoBehaviour
             if (rb != null) rb.linearVelocity = Vector2.zero;
         }
 
+        if (MusicManager.Instance != null)
+        {
+            MusicManager.Instance.FadeOutAndStop(musicFadeOut);
+        }
+
+        float startTime = Time.time;
+
         if (victorySound != null && audioSource != null)
         {
             audioSource.PlayOneShot(victorySound);
@@ -101,11 +109,17 @@ public class LevelExitDoor : MonoBehaviour
             victoryScreenGroup.alpha = 1f;
         }
 
-        yield return new WaitForSeconds(3.5f);
-
-        if (loadNextScene && !string.IsNullOrEmpty(nextSceneName))
+        float remaining = returnDelay - (Time.time - startTime);
+        if (remaining > 0f)
         {
-            SceneManager.LoadScene(nextSceneName);
+            yield return new WaitForSecondsRealtime(remaining);
+        }
+
+        Time.timeScale = 1f;
+
+        if (!string.IsNullOrEmpty(sceneAfterVictory))
+        {
+            SceneLoader.Load(sceneAfterVictory);
         }
     }
 }

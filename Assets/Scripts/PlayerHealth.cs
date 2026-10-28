@@ -121,6 +121,13 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void Kill()
+    {
+        currentHealth = 0;
+        UpdateHeartsUI();
+        Die();
+    }
+
     public void ResetHealth()
     {
         isDead = false;

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8428471051023437930}
   - component: {fileID: 6211465770624567128}
   - component: {fileID: -4803948776741354834}
+  - component: {fileID: 6191456915877634943}
   m_Layer: 11
   m_Name: SlimeRed
   m_TagString: Untagged
@@ -193,8 +194,6 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 512
-  playerBounceForce: 9.5
-  deathEffect: {fileID: 0}
   animator: {fileID: 0}
 --- !u!95 &-4803948776741354834
 Animator:
@@ -218,6 +217,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6191456915877634943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2442091578242292362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d01ce5b6074177318650d592c1812ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 1
+  bounceOffForce: 8.5
+  deathEffect: {fileID: 0}
+  deathSprite: {fileID: 7255294961469398162, guid: 08e1f90a718f26bd7b8935e8c3a7a598, type: 3}
+  flipUpsideDown: 1
+  deathHopForce: 7
+  deathHorizontalSpeed: 2
+  deathSpinSpeed: 0
+  deathGravityScale: 3
+  deathLifetime: 1.5
+  deathSortingBoost: 10
 --- !u!1 &2567573371152349054
 GameObject:
   m_ObjectHideFlags: 0

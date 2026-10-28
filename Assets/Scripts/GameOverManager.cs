@@ -13,7 +13,6 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private Button menuButton;
 
     [Header("Fight References")]
-    [Tooltip("Необов'язково: можна перетягнути BossFighterManager сюди напряму")]
     [SerializeField] private BossFightManager bossFightManager;
 
     [Header("Audio")]
@@ -84,6 +83,11 @@ public class GameOverManager : MonoBehaviour
     {
         Time.timeScale = 1f;
 
+        if (DialogueUI.Instance != null)
+        {
+            DialogueUI.Instance.CloseImmediately();
+        }
+
         if (gameOverCanvasGroup != null)
         {
             gameOverCanvasGroup.alpha = 0f;
@@ -120,8 +124,8 @@ public class GameOverManager : MonoBehaviour
         {
             if (bossFightManager != null)
             {
-                Debug.Log("[GameOverManager] Перезапускаємо бій через BossFightManager.RestartFight()");
-                bossFightManager.RestartFight();
+                Debug.Log("[GameOverManager] Скидаємо поточну хвилю бою після смерті гравця");
+                bossFightManager.ResetAfterPlayerDeath();
             }
             else
             {
@@ -133,6 +137,6 @@ public class GameOverManager : MonoBehaviour
     public void LoadMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        SceneLoader.Load("MainMenu");
     }
 }

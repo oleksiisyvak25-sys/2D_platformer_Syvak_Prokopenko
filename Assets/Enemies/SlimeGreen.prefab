@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5509852191464061186}
   - component: {fileID: 4922962452712877440}
   - component: {fileID: -1876196322727790081}
+  - component: {fileID: -2990309871849629759}
   m_Layer: 11
   m_Name: SlimeGreen
   m_TagString: Untagged
@@ -193,8 +194,6 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 512
-  playerBounceForce: 9.5
-  deathEffect: {fileID: 0}
   animator: {fileID: 0}
 --- !u!95 &-1876196322727790081
 Animator:
@@ -218,6 +217,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-2990309871849629759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7127838472394202210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d01ce5b6074177318650d592c1812ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 1
+  bounceOffForce: 8.5
+  deathEffect: {fileID: 0}
+  deathSprite: {fileID: 7255294961469398162, guid: 7a65d18a6c1b9648299ae29663dbda34, type: 3}
+  flipUpsideDown: 1
+  deathHopForce: 7
+  deathHorizontalSpeed: 2
+  deathSpinSpeed: 0
+  deathGravityScale: 3
+  deathLifetime: 1.5
+  deathSortingBoost: 10
 --- !u!1 &8606252017279450138
 GameObject:
   m_ObjectHideFlags: 0

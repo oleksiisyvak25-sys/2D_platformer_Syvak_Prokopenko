@@ -406,6 +406,16 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool(IsDuckingHash, isDucking);
         animator.SetBool(IsClimbingHash, isClimbing);
         animator.SetFloat(YVelocityHash, rb.linearVelocity.y);
+
+        bool climbingStill = isClimbing
+                            && Mathf.Abs(verticalInput) < 0.1f
+                            && Mathf.Abs(horizontalInput) < 0.1f;
+        animator.speed = climbingStill ? 0f : 1f;
+    }
+
+    private void OnDisable()
+    {
+        if (animator != null) animator.speed = 1f;
     }
 
     public void Bounce(float force)
