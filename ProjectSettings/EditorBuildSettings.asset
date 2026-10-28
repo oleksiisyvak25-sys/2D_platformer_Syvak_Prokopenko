@@ -12,14 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1.unity
     guid: 148d532e63522824d9e2cac416a4d13f
   - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: cea00ecbb8e07a84eb7ed486c15d0d12
+  - enabled: 1
     path: Assets/Scenes/BossFight.unity
     guid: c2558954fd6d4ba8cbfe45719763243f
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 4a9ed68b29c7b9148a0503856f2926bf
-  - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: cea00ecbb8e07a84eb7ed486c15d0d12
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
