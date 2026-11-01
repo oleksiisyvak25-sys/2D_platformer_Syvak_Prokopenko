@@ -17,11 +17,17 @@ TagManager:
   - Ladder
   - OneWayPlatform
   - Player
+<<<<<<< Updated upstream
   - 
   - 
   - 
   - 
-  - 
+=======
+  - FrozenEnemy
+  - Enemy
+  - InvisibleWall
+  - Slime
+>>>>>>> Stashed changes
   - 
   - 
   - 

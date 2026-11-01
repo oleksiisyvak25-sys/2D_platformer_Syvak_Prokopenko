@@ -93,9 +93,63 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
+<<<<<<< Updated upstream:Assets/PlayerHealth.cs
         Debug.Log("Player died!");
         UnityEngine.SceneManagement.SceneManager.LoadScene(
             UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex
         );
+=======
+        if (isDead) return;
+        isDead = true;
+
+        var movement = GetComponent<PlayerMovement>();
+        if (movement != null) 
+            movement.enabled = false;
+
+        if (GameOverManager.Instance != null)
+        {
+            GameOverManager.Instance.TriggerGameOver();
+        }
+
+        if(CameraFollow.Instance != null)
+        {
+            CameraFollow.Instance.ChangeFollowing(false);
+        }
+    }
+
+    public void Kill()
+    {
+        currentHealth = 0;
+        UpdateHeartsUI();
+        Die();
+    }
+
+    public void ResetHealth()
+    {
+        isDead = false;
+        currentHealth = maxHealth;
+
+        if (TryGetComponent<FreezingSystem>(out FreezingSystem freeze))
+        {
+            freeze.ResetFreezingSystem();
+        }
+
+        if (CameraFollow.Instance != null)
+        {
+            CameraFollow.Instance.ChangeFollowing(true);
+        }
+
+        if (heartImages != null)
+        {
+            for (int i = 0; i < heartImages.Length; i++)
+            {
+                if (heartImages[i] != null && fullHeartSprite != null)
+                {
+                    heartImages[i].sprite = fullHeartSprite;
+                    heartImages[i].enabled = true;
+                }
+            }
+        }
+>>>>>>> Stashed changes:Assets/Scripts/PlayerHealth.cs
     }
 }
