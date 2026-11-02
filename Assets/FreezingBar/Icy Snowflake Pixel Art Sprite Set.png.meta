@@ -1,0 +1,2796 @@
+fileFormatVersion: 2
+guid: b1932abf7c756f1438b343c86f311700
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7890737661801734825
+    second: Icy Snowflake Pixel Art Sprite Set_0
+  - first:
+      213: 4399430626482410876
+    second: Icy Snowflake Pixel Art Sprite Set_1
+  - first:
+      213: -727783079715992176
+    second: Icy Snowflake Pixel Art Sprite Set_2
+  - first:
+      213: 7917192372113761984
+    second: Icy Snowflake Pixel Art Sprite Set_3
+  - first:
+      213: -3766338344710782720
+    second: Icy Snowflake Pixel Art Sprite Set_4
+  - first:
+      213: 7481033379532065407
+    second: Icy Snowflake Pixel Art Sprite Set_5
+  - first:
+      213: -3573399921546182871
+    second: Icy Snowflake Pixel Art Sprite Set_6
+  - first:
+      213: -8475729412759922658
+    second: Icy Snowflake Pixel Art Sprite Set_7
+  - first:
+      213: 174156616030678932
+    second: Icy Snowflake Pixel Art Sprite Set_8
+  - first:
+      213: -2698095517955006224
+    second: Icy Snowflake Pixel Art Sprite Set_9
+  - first:
+      213: 6844728581173015935
+    second: Icy Snowflake Pixel Art Sprite Set_10
+  - first:
+      213: 9079443014484723582
+    second: Icy Snowflake Pixel Art Sprite Set_11
+  - first:
+      213: -3186993527877119548
+    second: Icy Snowflake Pixel Art Sprite Set_12
+  - first:
+      213: 4829932975751467814
+    second: Icy Snowflake Pixel Art Sprite Set_13
+  - first:
+      213: -3187684011082936285
+    second: Icy Snowflake Pixel Art Sprite Set_14
+  - first:
+      213: -3149180382426347307
+    second: Icy Snowflake Pixel Art Sprite Set_15
+  - first:
+      213: -1381457576675799073
+    second: Icy Snowflake Pixel Art Sprite Set_16
+  - first:
+      213: -7194110314478767451
+    second: Icy Snowflake Pixel Art Sprite Set_17
+  - first:
+      213: -5128188547298791946
+    second: Icy Snowflake Pixel Art Sprite Set_18
+  - first:
+      213: 3347339733592858520
+    second: Icy Snowflake Pixel Art Sprite Set_19
+  - first:
+      213: -6583426498173164267
+    second: Icy Snowflake Pixel Art Sprite Set_20
+  - first:
+      213: -6092877120958839637
+    second: Icy Snowflake Pixel Art Sprite Set_21
+  - first:
+      213: -7334220786070046660
+    second: Icy Snowflake Pixel Art Sprite Set_22
+  - first:
+      213: -8290026510941062888
+    second: Icy Snowflake Pixel Art Sprite Set_23
+  - first:
+      213: 9023540197588450523
+    second: Icy Snowflake Pixel Art Sprite Set_24
+  - first:
+      213: -6600333356293602387
+    second: Icy Snowflake Pixel Art Sprite Set_25
+  - first:
+      213: -5053093321149211472
+    second: Icy Snowflake Pixel Art Sprite Set_26
+  - first:
+      213: -3988655673732909765
+    second: Icy Snowflake Pixel Art Sprite Set_27
+  - first:
+      213: 8070505868360884057
+    second: Icy Snowflake Pixel Art Sprite Set_28
+  - first:
+      213: 5135133765365253002
+    second: Icy Snowflake Pixel Art Sprite Set_29
+  - first:
+      213: -285520518395086983
+    second: Icy Snowflake Pixel Art Sprite Set_30
+  - first:
+      213: 167305582744902711
+    second: Icy Snowflake Pixel Art Sprite Set_31
+  - first:
+      213: -6915454107133502584
+    second: Icy Snowflake Pixel Art Sprite Set_32
+  - first:
+      213: -891916455377830104
+    second: Icy Snowflake Pixel Art Sprite Set_33
+  - first:
+      213: 8852308068060113784
+    second: Icy Snowflake Pixel Art Sprite Set_34
+  - first:
+      213: -8580260157862629477
+    second: Icy Snowflake Pixel Art Sprite Set_35
+  - first:
+      213: 755952154031222252
+    second: Icy Snowflake Pixel Art Sprite Set_36
+  - first:
+      213: -3565842845913141427
+    second: Icy Snowflake Pixel Art Sprite Set_37
+  - first:
+      213: 217813807983324080
+    second: Icy Snowflake Pixel Art Sprite Set_38
+  - first:
+      213: 8198478150652942789
+    second: Icy Snowflake Pixel Art Sprite Set_39
+  - first:
+      213: -5964308701298102419
+    second: Icy Snowflake Pixel Art Sprite Set_40
+  - first:
+      213: 2375114609609269946
+    second: Icy Snowflake Pixel Art Sprite Set_41
+  - first:
+      213: -6980117530396990154
+    second: Icy Snowflake Pixel Art Sprite Set_42
+  - first:
+      213: -2425379753067698359
+    second: Icy Snowflake Pixel Art Sprite Set_43
+  - first:
+      213: -9121890835482982375
+    second: Icy Snowflake Pixel Art Sprite Set_44
+  - first:
+      213: -4698047763141808567
+    second: Icy Snowflake Pixel Art Sprite Set_45
+  - first:
+      213: -1217041990916311590
+    second: Icy Snowflake Pixel Art Sprite Set_46
+  - first:
+      213: 4210740537770848867
+    second: Icy Snowflake Pixel Art Sprite Set_47
+  - first:
+      213: -9138486920416955932
+    second: Icy Snowflake Pixel Art Sprite Set_48
+  - first:
+      213: -6573620902268386163
+    second: Icy Snowflake Pixel Art Sprite Set_49
+  - first:
+      213: 6541573479269534618
+    second: Icy Snowflake Pixel Art Sprite Set_50
+  - first:
+      213: -5200419311215776423
+    second: Icy Snowflake Pixel Art Sprite Set_51
+  - first:
+      213: -8947208872871264582
+    second: Icy Snowflake Pixel Art Sprite Set_52
+  - first:
+      213: 4067386420038826024
+    second: Icy Snowflake Pixel Art Sprite Set_53
+  - first:
+      213: 4325728598199566311
+    second: Icy Snowflake Pixel Art Sprite Set_54
+  - first:
+      213: 7270434940023004383
+    second: Icy Snowflake Pixel Art Sprite Set_55
+  - first:
+      213: 8613804832958023429
+    second: Icy Snowflake Pixel Art Sprite Set_56
+  - first:
+      213: -2222107460174374311
+    second: Icy Snowflake Pixel Art Sprite Set_57
+  - first:
+      213: -5412688634165777754
+    second: Icy Snowflake Pixel Art Sprite Set_58
+  - first:
+      213: -6439845209408523846
+    second: Icy Snowflake Pixel Art Sprite Set_59
+  - first:
+      213: 4070077793891061180
+    second: Icy Snowflake Pixel Art Sprite Set_60
+  - first:
+      213: -5735061633730271843
+    second: Icy Snowflake Pixel Art Sprite Set_61
+  - first:
+      213: -3971546863718337944
+    second: Icy Snowflake Pixel Art Sprite Set_62
+  - first:
+      213: 1624354829762987723
+    second: Icy Snowflake Pixel Art Sprite Set_63
+  - first:
+      213: -8232818416237575982
+    second: Icy Snowflake Pixel Art Sprite Set_64
+  - first:
+      213: -8455999844738840051
+    second: Icy Snowflake Pixel Art Sprite Set_65
+  - first:
+      213: -6794981918639881711
+    second: Icy Snowflake Pixel Art Sprite Set_66
+  - first:
+      213: 7611649222181962373
+    second: Icy Snowflake Pixel Art Sprite Set_67
+  - first:
+      213: 830813587296389200
+    second: Icy Snowflake Pixel Art Sprite Set_68
+  - first:
+      213: -8755781600506643554
+    second: Icy Snowflake Pixel Art Sprite Set_69
+  - first:
+      213: -2764584084668679336
+    second: Icy Snowflake Pixel Art Sprite Set_70
+  - first:
+      213: 7462467636423618027
+    second: Icy Snowflake Pixel Art Sprite Set_71
+  - first:
+      213: -5225468499998975726
+    second: Icy Snowflake Pixel Art Sprite Set_72
+  - first:
+      213: 2794767384542278754
+    second: Icy Snowflake Pixel Art Sprite Set_73
+  - first:
+      213: -1266595583479694380
+    second: Icy Snowflake Pixel Art Sprite Set_74
+  - first:
+      213: -9203071734438396560
+    second: Icy Snowflake Pixel Art Sprite Set_75
+  - first:
+      213: 3280350239425180388
+    second: Icy Snowflake Pixel Art Sprite Set_76
+  - first:
+      213: -2009554533940861002
+    second: Icy Snowflake Pixel Art Sprite Set_77
+  - first:
+      213: 5049151442196569040
+    second: Icy Snowflake Pixel Art Sprite Set_78
+  - first:
+      213: -38063641632537070
+    second: Icy Snowflake Pixel Art Sprite Set_79
+  - first:
+      213: -6560849519312928085
+    second: Icy Snowflake Pixel Art Sprite Set_80
+  - first:
+      213: 7711691360893629993
+    second: Icy Snowflake Pixel Art Sprite Set_81
+  - first:
+      213: 4560110935574639262
+    second: Icy Snowflake Pixel Art Sprite Set_82
+  - first:
+      213: -2176146275704897405
+    second: Icy Snowflake Pixel Art Sprite Set_83
+  - first:
+      213: 4435349708991565714
+    second: Icy Snowflake Pixel Art Sprite Set_84
+  - first:
+      213: 4262879097493426256
+    second: Icy Snowflake Pixel Art Sprite Set_85
+  - first:
+      213: -134140141576056876
+    second: Icy Snowflake Pixel Art Sprite Set_86
+  - first:
+      213: -3461599556414036126
+    second: Icy Snowflake Pixel Art Sprite Set_87
+  - first:
+      213: -3337553383441664080
+    second: Icy Snowflake Pixel Art Sprite Set_88
+  - first:
+      213: 2816977180943962747
+    second: Icy Snowflake Pixel Art Sprite Set_89
+  - first:
+      213: -3229276823975316056
+    second: Icy Snowflake Pixel Art Sprite Set_90
+  - first:
+      213: -360813294046634210
+    second: Icy Snowflake Pixel Art Sprite Set_91
+  - first:
+      213: -788888510132251116
+    second: Icy Snowflake Pixel Art Sprite Set_92
+  - first:
+      213: -631052731057350151
+    second: Icy Snowflake Pixel Art Sprite Set_93
+  - first:
+      213: -1878068247567305900
+    second: Icy Snowflake Pixel Art Sprite Set_94
+  - first:
+      213: 4567398386357139383
+    second: Icy Snowflake Pixel Art Sprite Set_95
+  - first:
+      213: 838788488526967194
+    second: Icy Snowflake Pixel Art Sprite Set_96
+  - first:
+      213: 6487870460176350708
+    second: Icy Snowflake Pixel Art Sprite Set_97
+  - first:
+      213: 4738469674450415669
+    second: Icy Snowflake Pixel Art Sprite Set_98
+  - first:
+      213: -8774501485025991366
+    second: Icy Snowflake Pixel Art Sprite Set_99
+  - first:
+      213: 7345221066233186220
+    second: Icy Snowflake Pixel Art Sprite Set_100
+  - first:
+      213: 3556070184038023839
+    second: Icy Snowflake Pixel Art Sprite Set_101
+  - first:
+      213: 5466672365346332596
+    second: Icy Snowflake Pixel Art Sprite Set_102
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_0
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1055
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a22d73b818818d60800000000000000
+      internalID: 7890737661801734825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1061
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75557978daed0d30800000000000000
+      internalID: 4399430626482410876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1057
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d0dfb152566e5f0800000000000000
+      internalID: -727783079715992176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_3
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1044
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6e54ee3848fdd60800000000000000
+      internalID: 7917192372113761984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_4
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1042
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001c49bfa374bbbc0800000000000000
+      internalID: -3766338344710782720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_5
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1019
+        width: 57
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a49d3f838f1d760800000000000000
+      internalID: 7481033379532065407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 790
+        height: 827
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fb4db34bbb86ec0800000000000000
+      internalID: -3573399921546182871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_7
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1026
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e185d146109206a80800000000000000
+      internalID: -8475729412759922658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_8
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 986
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49feac1058aba6200800000000000000
+      internalID: 174156616030678932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_9
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 953
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0e73aeb607e8ad0800000000000000
+      internalID: -2698095517955006224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_10
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 844
+        width: 158
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75f7c0316c5dfe50800000000000000
+      internalID: 6844728581173015935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_11
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 965
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7783c41159a00e70800000000000000
+      internalID: 9079443014484723582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_12
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 896
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c15a65954685c3d0800000000000000
+      internalID: -3186993527877119548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 931
+        width: 43
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6239c9c837e570340800000000000000
+      internalID: 4829932975751467814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 927
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320953fe74213c3d0800000000000000
+      internalID: -3187684011082936285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_15
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 925
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d849d3902ddb44d0800000000000000
+      internalID: -3149180382426347307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_16
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 925
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf87fd37a314dce0800000000000000
+      internalID: -1381457576675799073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_17
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 929
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2f486f8c2692c90800000000000000
+      internalID: -7194110314478767451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_18
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 907
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd6701cfa305d8b0800000000000000
+      internalID: -5128188547298791946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_19
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 915
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f5a53b0c3247e20800000000000000
+      internalID: 3347339733592858520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_20
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 925
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515ae7bfa78f2a4a0800000000000000
+      internalID: -6583426498173164267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_21
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 907
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4c4293a80c17ba0800000000000000
+      internalID: -6092877120958839637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_22
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 858
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38320ead0d973a90800000000000000
+      internalID: -7334220786070046660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_23
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 856
+        width: 76
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81979cc8fc8e3fc80800000000000000
+      internalID: -8290026510941062888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_24
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 892
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdcb7bd300e0a3d70800000000000000
+      internalID: 9023540197588450523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_25
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 909
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da345f258c7e664a0800000000000000
+      internalID: -6600333356293602387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_26
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 856
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc9008956ecfd9b0800000000000000
+      internalID: -5053093321149211472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_27
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 807
+        width: 82
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35bdcb2cc275a8c0800000000000000
+      internalID: -3988655673732909765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_28
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 905
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f1b51f352300070800000000000000
+      internalID: 8070505868360884057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_29
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 864
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83c5b6d3f8a34740800000000000000
+      internalID: 5135133765365253002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_30
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 909
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977b9fce990a90cf0800000000000000
+      internalID: -285520518395086983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_31
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 854
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c13748a83625200800000000000000
+      internalID: 167305582744902711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_32
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 854
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b9ac3112f5700a0800000000000000
+      internalID: -6915454107133502584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_33
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 874
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ff0eb95b64f93f0800000000000000
+      internalID: -891916455377830104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_34
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 849
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b2c0f4947b9da70800000000000000
+      internalID: 8852308068060113784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_35
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 876
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f292ab8dacce880800000000000000
+      internalID: -8580260157862629477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_36
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 886
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cede8389a7ead7a00800000000000000
+      internalID: 755952154031222252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_37
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 862
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4faa7403d4938ec0800000000000000
+      internalID: -3565842845913141427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_38
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 880
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb650c1184d50300800000000000000
+      internalID: 217813807983324080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_39
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 589
+        width: 239
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9587cc078d6c170800000000000000
+      internalID: 8198478150652942789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_40
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 840
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fea5026d48a3da0800000000000000
+      internalID: -5964308701298102419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_41
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 873
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2e99e472a16f020800000000000000
+      internalID: 2375114609609269946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_42
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 868
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635e53e9614a12f90800000000000000
+      internalID: -6980117530396990154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_43
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 846
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947a9fcf6f1575ed0800000000000000
+      internalID: -2425379753067698359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_44
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 858
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918452f6d98886180800000000000000
+      internalID: -9121890835482982375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_45
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 847
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e2d14637e2dceb0800000000000000
+      internalID: -4698047763141808567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_46
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 834
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5f2b6e1c23c1fe0800000000000000
+      internalID: -1217041990916311590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_47
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 811
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3623b2ba53e8f6a30800000000000000
+      internalID: 4210740537770848867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_48
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 783
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e17efb40929d2180800000000000000
+      internalID: -9138486920416955932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_49
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 763
+        width: 118
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84c5303e9ec5c4a0800000000000000
+      internalID: -6573620902268386163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_50
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 828
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b0affab6658ca50800000000000000
+      internalID: 6541573479269534618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_51
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 819
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95de6ef703664d7b0800000000000000
+      internalID: -5200419311215776423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_52
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 574
+        width: 181
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abef8493fe025d380800000000000000
+      internalID: -8947208872871264582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_53
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 793
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82879aa2662427830800000000000000
+      internalID: 4067386420038826024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_54
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 605
+        width: 126
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7effe6acd33180c30800000000000000
+      internalID: 4325728598199566311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_55
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 758
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcd8aabe06c5e460800000000000000
+      internalID: 7270434940023004383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_56
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 752
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50781019bd16a8770800000000000000
+      internalID: 8613804832958023429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_57
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 745
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a9f87c90d7921e0800000000000000
+      internalID: -2222107460174374311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_58
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 730
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa21c86d5442e4b0800000000000000
+      internalID: -5412688634165777754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_59
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 576
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab134bcd6e211a6a0800000000000000
+      internalID: -6439845209408523846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_60
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 601
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd05197032db7830800000000000000
+      internalID: 4070077793891061180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_61
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 572
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95298c64d7f860b0800000000000000
+      internalID: -5735061633730271843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 566
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862704b6b2b32e8c0800000000000000
+      internalID: -3971546863718337944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_63
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 262
+        width: 291
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc686398c1eda8610800000000000000
+      internalID: 1624354829762987723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_64
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 214
+        width: 325
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d08ddf05472fbd80800000000000000
+      internalID: -8232818416237575982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_65
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 534
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a459961f046aa80800000000000000
+      internalID: -8455999844738840051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_66
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 438
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112844442ff53b1a0800000000000000
+      internalID: -6794981918639881711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_67
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 439
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582c80ba3a202a960800000000000000
+      internalID: 7611649222181962373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_68
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 420
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0588e594e84a78b00800000000000000
+      internalID: 830813587296389200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_69
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 159
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b76e246073d7680800000000000000
+      internalID: -8755781600506643554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_70
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 269
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bff912c6932a9d0800000000000000
+      internalID: -2764584084668679336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_71
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 234
+        width: 44
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bede0e807c2009760800000000000000
+      internalID: 7462467636423618027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_72
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 289
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2195190c5186b77b0800000000000000
+      internalID: -5225468499998975726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_73
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 287
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2647d71012209c620800000000000000
+      internalID: 2794767384542278754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_74
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 292
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db3d9c07062c6ee0800000000000000
+      internalID: -1266595583479694380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_75
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 274
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d7c5a740f184080800000000000000
+      internalID: -9203071734438396560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_76
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 267
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e23ec7a925268d20800000000000000
+      internalID: 3280350239425180388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_77
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 256
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7eda76cc0ac14e0800000000000000
+      internalID: -2009554533940861002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_78
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 268
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db17413c70321640800000000000000
+      internalID: 5049151442196569040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_79
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 266
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21682a1d155c87ff0800000000000000
+      internalID: -38063641632537070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_80
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 242
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba28f808f1e23f4a0800000000000000
+      internalID: -6560849519312928085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_81
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 264
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92673873f6e650b60800000000000000
+      internalID: 7711691360893629993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_82
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 256
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92fc434cb4c84f30800000000000000
+      internalID: 4560110935574639262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_83
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 260
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3800251fd76ccc1e0800000000000000
+      internalID: -2176146275704897405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_84
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 272
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f03139f078d8d30800000000000000
+      internalID: 4435349708991565714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_85
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 257
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050988614f9c82b30800000000000000
+      internalID: 4262879097493426256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_86
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 246
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df0d3f7040732ef0800000000000000
+      internalID: -134140141576056876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_87
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 250
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267aa453b8de5ffc0800000000000000
+      internalID: -3461599556414036126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SnowFlakeIcon
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 12
+        width: 235
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 1, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b77e0181e0aea1d0800000000000000
+      internalID: -3337553383441664080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_89
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 260
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72db8232d9e71720800000000000000
+      internalID: 2816977180943962747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_90
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 0
+        width: 321
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5bc8986dd4f23d0800000000000000
+      internalID: -3229276823975316056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_91
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 228
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f9c1288322efaf0800000000000000
+      internalID: -360813294046634210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_92
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 228
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4161e2a641e4d05f0800000000000000
+      internalID: -788888510132251116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_93
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 23
+        width: 205
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f959c272ec0e37f0800000000000000
+      internalID: -631052731057350151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_94
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 18
+        width: 236
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4537fc711e2cfe5e0800000000000000
+      internalID: -1878068247567305900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_95
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 241
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7728e12a8a26f30800000000000000
+      internalID: 4567398386357139383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_96
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 25
+        width: 202
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a91365cafa9f3ab00800000000000000
+      internalID: 838788488526967194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_97
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 222
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fdbf8f2fcb890a50800000000000000
+      internalID: 6487870460176350708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_98
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 163
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530f39c301d62c140800000000000000
+      internalID: 4738469674450415669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_99
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 23
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3563ef7365ba3680800000000000000
+      internalID: -8774501485025991366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_100
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 23
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca78b81a4a77fe560800000000000000
+      internalID: 7345221066233186220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_101
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 54
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92c1f3ddf2b95130800000000000000
+      internalID: 3556070184038023839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icy Snowflake Pixel Art Sprite Set_102
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 15
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf99e77d858ddb40800000000000000
+      internalID: 5466672365346332596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 566f7043be5e7de4f92b1f11d9bd4615
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      I: -3337553383441664080
+      Icy Snowflake Pixel Art Sprite Set_0: 7890737661801734825
+      Icy Snowflake Pixel Art Sprite Set_1: 4399430626482410876
+      Icy Snowflake Pixel Art Sprite Set_10: 6844728581173015935
+      Icy Snowflake Pixel Art Sprite Set_100: 7345221066233186220
+      Icy Snowflake Pixel Art Sprite Set_101: 3556070184038023839
+      Icy Snowflake Pixel Art Sprite Set_102: 5466672365346332596
+      Icy Snowflake Pixel Art Sprite Set_11: 9079443014484723582
+      Icy Snowflake Pixel Art Sprite Set_12: -3186993527877119548
+      Icy Snowflake Pixel Art Sprite Set_13: 4829932975751467814
+      Icy Snowflake Pixel Art Sprite Set_14: -3187684011082936285
+      Icy Snowflake Pixel Art Sprite Set_15: -3149180382426347307
+      Icy Snowflake Pixel Art Sprite Set_16: -1381457576675799073
+      Icy Snowflake Pixel Art Sprite Set_17: -7194110314478767451
+      Icy Snowflake Pixel Art Sprite Set_18: -5128188547298791946
+      Icy Snowflake Pixel Art Sprite Set_19: 3347339733592858520
+      Icy Snowflake Pixel Art Sprite Set_2: -727783079715992176
+      Icy Snowflake Pixel Art Sprite Set_20: -6583426498173164267
+      Icy Snowflake Pixel Art Sprite Set_21: -6092877120958839637
+      Icy Snowflake Pixel Art Sprite Set_22: -7334220786070046660
+      Icy Snowflake Pixel Art Sprite Set_23: -8290026510941062888
+      Icy Snowflake Pixel Art Sprite Set_24: 9023540197588450523
+      Icy Snowflake Pixel Art Sprite Set_25: -6600333356293602387
+      Icy Snowflake Pixel Art Sprite Set_26: -5053093321149211472
+      Icy Snowflake Pixel Art Sprite Set_27: -3988655673732909765
+      Icy Snowflake Pixel Art Sprite Set_28: 8070505868360884057
+      Icy Snowflake Pixel Art Sprite Set_29: 5135133765365253002
+      Icy Snowflake Pixel Art Sprite Set_3: 7917192372113761984
+      Icy Snowflake Pixel Art Sprite Set_30: -285520518395086983
+      Icy Snowflake Pixel Art Sprite Set_31: 167305582744902711
+      Icy Snowflake Pixel Art Sprite Set_32: -6915454107133502584
+      Icy Snowflake Pixel Art Sprite Set_33: -891916455377830104
+      Icy Snowflake Pixel Art Sprite Set_34: 8852308068060113784
+      Icy Snowflake Pixel Art Sprite Set_35: -8580260157862629477
+      Icy Snowflake Pixel Art Sprite Set_36: 755952154031222252
+      Icy Snowflake Pixel Art Sprite Set_37: -3565842845913141427
+      Icy Snowflake Pixel Art Sprite Set_38: 217813807983324080
+      Icy Snowflake Pixel Art Sprite Set_39: 8198478150652942789
+      Icy Snowflake Pixel Art Sprite Set_4: -3766338344710782720
+      Icy Snowflake Pixel Art Sprite Set_40: -5964308701298102419
+      Icy Snowflake Pixel Art Sprite Set_41: 2375114609609269946
+      Icy Snowflake Pixel Art Sprite Set_42: -6980117530396990154
+      Icy Snowflake Pixel Art Sprite Set_43: -2425379753067698359
+      Icy Snowflake Pixel Art Sprite Set_44: -9121890835482982375
+      Icy Snowflake Pixel Art Sprite Set_45: -4698047763141808567
+      Icy Snowflake Pixel Art Sprite Set_46: -1217041990916311590
+      Icy Snowflake Pixel Art Sprite Set_47: 4210740537770848867
+      Icy Snowflake Pixel Art Sprite Set_48: -9138486920416955932
+      Icy Snowflake Pixel Art Sprite Set_49: -6573620902268386163
+      Icy Snowflake Pixel Art Sprite Set_5: 7481033379532065407
+      Icy Snowflake Pixel Art Sprite Set_50: 6541573479269534618
+      Icy Snowflake Pixel Art Sprite Set_51: -5200419311215776423
+      Icy Snowflake Pixel Art Sprite Set_52: -8947208872871264582
+      Icy Snowflake Pixel Art Sprite Set_53: 4067386420038826024
+      Icy Snowflake Pixel Art Sprite Set_54: 4325728598199566311
+      Icy Snowflake Pixel Art Sprite Set_55: 7270434940023004383
+      Icy Snowflake Pixel Art Sprite Set_56: 8613804832958023429
+      Icy Snowflake Pixel Art Sprite Set_57: -2222107460174374311
+      Icy Snowflake Pixel Art Sprite Set_58: -5412688634165777754
+      Icy Snowflake Pixel Art Sprite Set_59: -6439845209408523846
+      Icy Snowflake Pixel Art Sprite Set_6: -3573399921546182871
+      Icy Snowflake Pixel Art Sprite Set_60: 4070077793891061180
+      Icy Snowflake Pixel Art Sprite Set_61: -5735061633730271843
+      Icy Snowflake Pixel Art Sprite Set_62: -3971546863718337944
+      Icy Snowflake Pixel Art Sprite Set_63: 1624354829762987723
+      Icy Snowflake Pixel Art Sprite Set_64: -8232818416237575982
+      Icy Snowflake Pixel Art Sprite Set_65: -8455999844738840051
+      Icy Snowflake Pixel Art Sprite Set_66: -6794981918639881711
+      Icy Snowflake Pixel Art Sprite Set_67: 7611649222181962373
+      Icy Snowflake Pixel Art Sprite Set_68: 830813587296389200
+      Icy Snowflake Pixel Art Sprite Set_69: -8755781600506643554
+      Icy Snowflake Pixel Art Sprite Set_7: -8475729412759922658
+      Icy Snowflake Pixel Art Sprite Set_70: -2764584084668679336
+      Icy Snowflake Pixel Art Sprite Set_71: 7462467636423618027
+      Icy Snowflake Pixel Art Sprite Set_72: -5225468499998975726
+      Icy Snowflake Pixel Art Sprite Set_73: 2794767384542278754
+      Icy Snowflake Pixel Art Sprite Set_74: -1266595583479694380
+      Icy Snowflake Pixel Art Sprite Set_75: -9203071734438396560
+      Icy Snowflake Pixel Art Sprite Set_76: 3280350239425180388
+      Icy Snowflake Pixel Art Sprite Set_77: -2009554533940861002
+      Icy Snowflake Pixel Art Sprite Set_78: 5049151442196569040
+      Icy Snowflake Pixel Art Sprite Set_79: -38063641632537070
+      Icy Snowflake Pixel Art Sprite Set_8: 174156616030678932
+      Icy Snowflake Pixel Art Sprite Set_80: -6560849519312928085
+      Icy Snowflake Pixel Art Sprite Set_81: 7711691360893629993
+      Icy Snowflake Pixel Art Sprite Set_82: 4560110935574639262
+      Icy Snowflake Pixel Art Sprite Set_83: -2176146275704897405
+      Icy Snowflake Pixel Art Sprite Set_84: 4435349708991565714
+      Icy Snowflake Pixel Art Sprite Set_85: 4262879097493426256
+      Icy Snowflake Pixel Art Sprite Set_86: -134140141576056876
+      Icy Snowflake Pixel Art Sprite Set_87: -3461599556414036126
+      Icy Snowflake Pixel Art Sprite Set_89: 2816977180943962747
+      Icy Snowflake Pixel Art Sprite Set_9: -2698095517955006224
+      Icy Snowflake Pixel Art Sprite Set_90: -3229276823975316056
+      Icy Snowflake Pixel Art Sprite Set_91: -360813294046634210
+      Icy Snowflake Pixel Art Sprite Set_92: -788888510132251116
+      Icy Snowflake Pixel Art Sprite Set_93: -631052731057350151
+      Icy Snowflake Pixel Art Sprite Set_94: -1878068247567305900
+      Icy Snowflake Pixel Art Sprite Set_95: 4567398386357139383
+      Icy Snowflake Pixel Art Sprite Set_96: 838788488526967194
+      Icy Snowflake Pixel Art Sprite Set_97: 6487870460176350708
+      Icy Snowflake Pixel Art Sprite Set_98: 4738469674450415669
+      Icy Snowflake Pixel Art Sprite Set_99: -8774501485025991366
+      SnowFlakeIcon: -3337553383441664080
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

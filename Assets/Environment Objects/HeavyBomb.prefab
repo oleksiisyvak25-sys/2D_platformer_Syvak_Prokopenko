@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2613247888821195678, guid: 51b888efb2b8da20d9366320e31da4e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -169,6 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3456877f7430cdda867df7ed8aaae92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeavyBomb
-  damageToBoss: 1
-  pushSlowFactor: 0.5
-  explosionEffectPrefab: {fileID: 0}
+  damage: 2
+  missDestroyDelay: 0.8
+  stuckRespawnTime: 25
