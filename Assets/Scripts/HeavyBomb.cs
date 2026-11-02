@@ -7,12 +7,40 @@ public class HeavyBomb : MonoBehaviour
     [SerializeField] private int damage = 2;
     [SerializeField] private float missDestroyDelay = 0.8f;
 
+    [Header("Safety")]
+    [SerializeField] private float stuckRespawnTime = 25f;
+
     private BossFightManager fightManager;
     private bool isDetonated = false;
+    private float aliveTime;
 
     public void Initialize(BossFightManager manager)
     {
         fightManager = manager;
+    }
+
+    private void Update()
+    {
+        if (isDetonated || stuckRespawnTime <= 0f) return;
+
+        aliveTime += Time.deltaTime;
+        if (aliveTime >= stuckRespawnTime)
+        {
+            RespawnAtTop();
+        }
+    }
+
+    public void RespawnAtTop()
+    {
+        if (isDetonated) return;
+        isDetonated = true;
+
+        if (fightManager != null)
+        {
+            fightManager.RespawnBomb();
+        }
+
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

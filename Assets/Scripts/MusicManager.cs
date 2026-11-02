@@ -22,6 +22,7 @@ public class MusicManager : MonoBehaviour
     private AudioSource _source;
     private Coroutine _routine;
     private AudioClip _currentClip;
+    private float _baseVolume;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     private static void ResetStatics()
@@ -44,6 +45,7 @@ public class MusicManager : MonoBehaviour
         _source.loop = true;
         _source.playOnAwake = false;
         _source.volume = 0f;
+        _baseVolume = 0f;
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -75,23 +77,33 @@ public class MusicManager : MonoBehaviour
         _routine = StartCoroutine(StopRoutine(duration));
     }
 
+    public void RefreshVolume()
+    {
+        if (_source != null)
+        {
+            _source.volume = _baseVolume * GameAudioSettings.MusicVolume;
+        }
+    }
+
     private IEnumerator StopRoutine(float duration)
     {
         if (_source.isPlaying && duration > 0f)
         {
-            float startVolume = _source.volume;
+            float startVolume = _baseVolume;
             float elapsed = 0f;
 
             while (elapsed < duration)
             {
                 elapsed += Time.unscaledDeltaTime;
-                _source.volume = Mathf.Lerp(startVolume, 0f, elapsed / duration);
+                _baseVolume = Mathf.Lerp(startVolume, 0f, elapsed / duration);
+                RefreshVolume();
                 yield return null;
             }
         }
 
         _source.Stop();
-        _source.volume = 0f;
+        _baseVolume = 0f;
+        RefreshVolume();
         _source.clip = null;
         _currentClip = null;
     }
@@ -116,7 +128,7 @@ public class MusicManager : MonoBehaviour
 
         if (entry.clip != null && entry.clip == _currentClip)
         {
-            _routine = StartCoroutine(Fade(_source.volume, entry.volume));
+            _routine = StartCoroutine(Fade(_baseVolume, entry.volume));
             return;
         }
 
@@ -127,12 +139,14 @@ public class MusicManager : MonoBehaviour
     {
         if (_source.isPlaying)
         {
-            yield return Fade(_source.volume, 0f);
+            yield return Fade(_baseVolume, 0f);
         }
 
         _source.Stop();
         _currentClip = clip;
         _source.clip = clip;
+        _baseVolume = 0f;
+        RefreshVolume();
 
         if (clip == null) yield break;
 
@@ -144,7 +158,8 @@ public class MusicManager : MonoBehaviour
     {
         if (fadeTime <= 0f)
         {
-            _source.volume = to;
+            _baseVolume = to;
+            RefreshVolume();
             yield break;
         }
 
@@ -152,10 +167,12 @@ public class MusicManager : MonoBehaviour
         while (elapsed < fadeTime)
         {
             elapsed += Time.unscaledDeltaTime;
-            _source.volume = Mathf.Lerp(from, to, elapsed / fadeTime);
+            _baseVolume = Mathf.Lerp(from, to, elapsed / fadeTime);
+            RefreshVolume();
             yield return null;
         }
 
-        _source.volume = to;
+        _baseVolume = to;
+        RefreshVolume();
     }
 }

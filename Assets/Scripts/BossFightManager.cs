@@ -144,6 +144,14 @@ public class BossFightManager : MonoBehaviour
         StartWave(currentWave);
     }
 
+    public void RespawnBomb()
+    {
+        if (IsBossDefeated || !bombPhase) return;
+
+        Debug.Log("Бомба загубилась: скидаємо її заново.");
+        SpawnSingleBomb();
+    }
+
     public void OnBossHitByBomb()
     {
         bombPhase = false;
